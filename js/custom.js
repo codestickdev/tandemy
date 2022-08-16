@@ -216,11 +216,11 @@
             e.preventDefault();
 
             let form = $(this),
-                dropdownSelect = form.find('.selected p').text(),
+                dropdownSelect = form.find('.dropdownSelect'),
                 name = form.find('input[name="contactName"]').val(),
                 phone = form.find('input[name="contactPhone"]').val(),
                 mail = form.find('input[name="contactEmail"]').val(),
-                dropdown = dropdownSelect.find('.selected').attr('value'),
+                dropdown = dropdownSelect.find('.selected p').text(),
                 message = form.find('textarea[name="contactMessage"]').val(),
                 valid = validForm(form),
                 data = {
