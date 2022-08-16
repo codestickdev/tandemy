@@ -216,7 +216,7 @@
             e.preventDefault();
 
             let form = $(this),
-                dropdownSelect = form.find('.selected').find('p').text(),
+                dropdownSelect = form.find('.selected p').text(),
                 name = form.find('input[name="contactName"]').val(),
                 phone = form.find('input[name="contactPhone"]').val(),
                 mail = form.find('input[name="contactEmail"]').val(),
