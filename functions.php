@@ -202,6 +202,7 @@ function contactForm(){
 	$name = isset( $_POST['name'] ) ? $_POST['name'] : '';
 	$phone = isset( $_POST['phone'] ) ? $_POST['phone'] : '';
 	$mail = isset( $_POST['mail'] ) ? $_POST['mail'] : '';
+	$dropdown = isset( $_POST['dropdown'] ) ? $_POST['dropdown'] : '';
 	$usermessage = isset( $_POST['message'] ) ? $_POST['message'] : '';
 
 	$to = 'info@lotytandemowe.pl';
@@ -209,6 +210,7 @@ function contactForm(){
 	$message = "Imię i nazwisko: " . $name . "<br/>
 	Telefon: " . $phone . "<br/>
 	Mail: " . $mail . "<br/>
+	Zainteresowany usługą: " . $dropdown . "<br/>
 	Wiadomość: " . $usermessage;
 	$headers = "Content-Type: text/html; charset=UTF-8";
 	
