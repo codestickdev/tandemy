@@ -78,26 +78,15 @@ get_header(); ?>
     <?php $images = get_field('mainGallery') ?>
     <section class="mainGallery">
         <div class="mainGallery__heading">
-            <h2>Galeria zdjęć</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Galeria zdjęć i filmów</h2>
         </div>
         <div class="mainGallery__wrap container">
-        <?php 
-            $args = array(
-                'posts_per_page'	=> -1,
-                'post_type'		    => 'galeria',
-            );
-            $galleries = new WP_Query( $args ); ?>
-            <?php while( $galleries->have_posts() ) : $galleries->the_post();
-                $images = get_field('gallery_images');
-            ?>
-                <a href="<?php the_permalink(); ?>" class="image">
-                    <img src="<?php echo $images[0]['url']; ?>"/>
-                    <h3><?php the_title(); ?></h3>
-                </a>
-            <?php endwhile; ?>
-
-            <?php wp_reset_query(); ?>
+            <a href="<?php echo home_url('/zdjecia'); ?>" class="box box--images" style="background-image: url('<?php echo get_field('mainGallery_box_images_bg'); ?>')">
+                <p>Galeria zdjęć</p>
+            </a>
+            <a href="<?php echo home_url('/wideo'); ?>" class="box box--video" style="background-image: url('<?php echo get_field('mainGallery_box_videos_bg'); ?>')">
+                <p>Filmy wideo</p>
+            </a>
         </div>
     </section>
     <section class="mainPlaces">

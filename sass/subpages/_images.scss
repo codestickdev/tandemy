@@ -1,0 +1,117 @@
+.imagesHeading{
+    padding: 60px 0 40px;
+
+    h1{
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+        margin: 0;
+        color: $main;
+        text-align: center;
+    }
+}
+.imagesList{
+    padding: 0 0 50px;
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+
+        .image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: calc(100% / 3 - 8px);
+            height: 380px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            margin: 0 5px 10px;
+            background-color: #000;
+            position: relative;
+    
+            @media (min-width: 992px){
+                &:nth-child(3n+1){
+                    margin-left: 0;
+                }
+                &:nth-child(3n+3){
+                    margin-right: 0;
+                }
+            }
+    
+            &:hover{
+                img{
+                    transform: scale(1.05);
+                    opacity: .8;
+                }
+            }
+    
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: ease .3s;
+                position: relative;
+                z-index: 1;
+            }
+            h3{
+                font-size: 21px;
+                line-height: 28px;
+                font-weight: 500;
+                color: #000;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transform: translate(0, -50%);
+                z-index: 2;
+                background-color: #fff;
+                max-width: fit-content;
+                max-width: -moz-max-content;
+                max-width: -webkit-fit-content;
+                padding: 4px 15px;
+                box-shadow: 4px 4px 0 #00000026;
+            }
+        }
+    }
+}
+@media (max-width: 1199px){
+    .imagesList{
+        .image{
+            height: 330px;
+        }
+    }
+}
+@media (max-width: 991px){
+    .imagesList{
+        .image{
+            max-width: calc(100% / 2 - 5px);
+
+            &:nth-child(2n+1){
+                margin-left: 0;
+            }
+            &:nth-child(2n+2){
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    .imagesList{
+        .image{
+            height: 280px;
+        }
+    }
+}
+@media (max-width: 450px){
+    .imagesList{
+        .image{
+            max-width: 100%;
+            margin: 0 0 10px;
+            height: 280px;
+        }
+    }
+}

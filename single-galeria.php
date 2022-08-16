@@ -14,8 +14,6 @@ get_header();
         <section class="galleryHeading">
             <div class="galleryHeading__wrap container">
                 <h1><?php the_title(); ?></h1>
-                <?php echo get_field('gallery_desc'); ?>
-                <a href="<?php echo home_url('/'); ?>" class="btn"><span>Powrót do strony głównej</span></a>
             </div>
         </section>
         <section class="galleryList">
