@@ -1,0 +1,41 @@
+.siteHeader{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+
+    &__wrap{
+        height: inherit;
+    }
+    &__menu{
+        height: inherit;
+
+        .menu{
+            height: inherit;
+
+            ul{
+                height: inherit;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li{
+                    a{
+                        color: #000;
+
+                        &:hover{
+                            opacity: .7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

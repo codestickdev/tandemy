@@ -1,0 +1,62 @@
+.subHeading{
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/wp-content/themes/tandemy/images/subpage/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center -330px;
+    background-size: cover;
+
+    &__wrap{
+        h1{
+            font-size: 42px;
+            line-height: 48px;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+        }
+        a{
+            display: block;
+            max-width: fit-content;
+            max-width: -moz-max-content;
+            max-width: -webkit-fit-content;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 19px;
+            color: #fff;
+            text-decoration: underline !important;
+            text-align: center;
+            transition: ease .3s;
+
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+}
+
+.subContent{
+    padding: 30px 0;
+
+    &__wrap{
+        max-width: 800px;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            color: $main;
+            text-transform: uppercase;
+        }
+
+        p{
+            text-align: justify !important;
+        }
+    }
+}
