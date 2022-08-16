@@ -204,7 +204,7 @@ function contactForm(){
 	$mail = isset( $_POST['mail'] ) ? $_POST['mail'] : '';
 	$usermessage = isset( $_POST['message'] ) ? $_POST['message'] : '';
 
-	$to = 'piotrdevv@gmail.com';
+	$to = 'info@lotytandemowe.pl';
 	$subject = '[lotytandemowe.pl] Wiadomość ze strony lotytandemowe.pl';
 	$message = "Imię i nazwisko: " . $name . "<br/>
 	Telefon: " . $phone . "<br/>
