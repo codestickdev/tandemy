@@ -30,7 +30,7 @@ get_header(); ?>
                 <div class="video">
                     <?php echo get_field('mainAbout_video'); ?>
                 </div>
-                <a href="#" class="btn"><span>Zobacz wszystkie filmy</span></a>
+                <a href="<?php echo home_url('/wideo'); ?>" class="btn"><span>Zobacz wszystkie filmy</span></a>
             </div>
             <?php endif; ?>
         </div>
